@@ -1,0 +1,73 @@
+@import '../index.scss';
+
+.footer {
+    width: 100%;
+    h3 {
+        font-size: getRem(58);
+        padding-left: getRem(50);
+    }
+    &-main {
+        &-contacts {
+            margin: getRem(60) getRem(50) getRem(40);
+            display: flex;
+            justify-content: space-between;
+            &-item {
+                h5 {
+                    text-transform: uppercase;
+                }
+            }
+            button {
+                cursor: pointer;
+                color: white;
+                background: #E07C3E;
+                font-size: getRem(16);
+                height: getRem(80);
+                text-transform: uppercase;
+                padding-left: getRem(132);
+                padding-right: getRem(132);
+                border: 0;
+                &:hover {
+                    background: #e08f5d;
+                }
+            }
+        }
+        &-networks {
+            margin: 0 getRem(50) getRem(80);
+            display: flex;
+            &-item {
+                h5 {
+                    text-transform: uppercase;
+                }
+            }
+            &-links {
+                margin-left: getRem(320);
+                display: flex;
+                &-pair {
+                    display: flex;
+                    flex-direction: column;
+                    a {
+                        margin-top: getRem(20);
+                        width: getRem(140);
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        text-decoration: none;
+                        color: black;
+                        font-size: getRem(16);
+                        text-transform: uppercase;
+                    }
+                    &:last-child {
+                        margin-left: getRem(100);
+                    }
+                }
+            }
+        }
+    }
+    &-rights {
+        margin-left: getRem(50);
+        margin-bottom: getRem(50);
+        img {
+            margin-left: getRem(300);
+        }
+    }
+}

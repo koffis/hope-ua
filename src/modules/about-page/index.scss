@@ -1,0 +1,109 @@
+@import '../../index.scss';
+
+.about {
+    &-main {
+        display: flex;
+        &-left {
+            width: 50vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h3 {
+                padding-left: getRem(50);
+                font-size: getRem(58);
+                font-weight: 700;
+                width: getRem(300);
+                margin-top: getRem(90);
+                margin-bottom: getRem(20);
+            }
+            p {
+                padding-left: getRem(50);
+                font-size: getRem(20);
+                width: getRem(530);
+            }
+            &-plus {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: getRem(380);
+                background: #E07C3E;
+                color: white;
+                img {
+                    width: getRem(147);
+                }
+                h4 {
+                    font-size: getRem(24);
+                    margin-top: 0;
+                    text-align: center;
+                    margin-top: getRem(40);
+                }
+            }
+        }
+        &-right {
+            width: 50vw;
+            img {
+                width: 100%;
+            }
+            &-orange {
+                margin-top: getRem(-4);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: getRem(380);
+                background: #E07C3E;
+                color: white;
+                h3 {
+                    padding-left: getRem(50);
+                    width: getRem(432);
+                    font-size: getRem(48);
+                    margin-top: 0;
+                }
+                a {
+                    padding-left: getRem(50);
+                    text-decoration: none;
+                    color: white;
+                    font-size: getRem(16);
+                    width: getRem(210);
+                    text-transform: uppercase;
+                }
+            }
+            &-yellow {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: getRem(380);
+                background: #FDD66D;
+                color: white;
+                img {
+                    width: getRem(147);
+                }
+                h4 {
+                    font-size: getRem(24);
+                    margin-top: 0;
+                    text-align: center;
+                    margin-top: getRem(40);
+                }
+            }
+            &-green {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: getRem(380);
+                background: #8A995F;
+                color: white;
+                img {
+                    width: getRem(147);
+                }
+                h4 {
+                    font-size: getRem(24);
+                    margin-top: 0;
+                    text-align: center;
+                    margin-top: getRem(40);
+                }
+            }
+        }
+    }
+}

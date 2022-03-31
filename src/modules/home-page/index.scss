@@ -1,0 +1,168 @@
+@import '../../index.scss';
+
+.home {
+    &-header {
+        background-image: url('../../assets/images/pole.png');
+        background-repeat: round;
+        height: getRem(800);
+        button {
+            cursor: pointer;
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: getRem(14);
+            padding: getRem(30) getRem(150);
+            color: white;
+            border: 0;
+            background: #48588A;
+            text-transform: uppercase;
+            &:hover {
+                background: #6a79a7;
+            }
+        }
+        img {
+            position: absolute;
+            margin-top: getRem(330);
+            margin-left: getRem(50);
+        }
+    }
+    &-about {
+        display: flex;
+        &-left {
+            width: 50vw;
+            display: flex;
+            flex-direction: column;
+            h3 {
+                padding-left: getRem(50);
+                font-size: getRem(58);
+                font-weight: 700;
+                margin-top: getRem(90);
+                margin-bottom: getRem(20);
+            }
+            p {
+                padding-left: getRem(50);
+                font-size: getRem(20);
+                width: getRem(530);
+            }
+            a {
+                padding-left: getRem(50);
+                text-decoration: none;
+                color: black;
+                font-size: getRem(16);
+                width: getRem(210);
+                margin-top: getRem(40);
+                text-transform: uppercase;
+            }
+            button {
+                margin-top: getRem(110);
+                cursor: pointer;
+                font-size: getRem(16);
+                padding-top: getRem(30);
+                padding-bottom: getRem(30);
+                color: white;
+                border: 0;
+                background: #48588A;
+                text-transform: uppercase;
+                &:hover {
+                    background: #6a79a7;
+                }
+            }
+            img {
+                height: getRem(348);
+                margin-top: getRem(70);
+            }
+        }
+        &-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 50vw;
+            background: #C9D8E1;
+            img {
+                width: 100%;
+            }
+            h3 {
+                padding-left: getRem(50);
+                width: getRem(432);
+                font-size: getRem(48);
+            }
+            &-second {
+                margin-bottom: getRem(24);
+            }
+            a {
+                padding-left: getRem(50);
+                text-decoration: none;
+                color: black;
+                font-size: getRem(16);
+                width: getRem(210);
+                text-transform: uppercase;
+            }
+            &-yellow {
+                background: #FDD66D;
+                height: getRem(348);
+                width: 100%;
+                h3 {
+                    margin-bottom: getRem(24);
+                    padding-top: getRem(70);
+                }
+            }
+        }
+    }
+    &-numbers {
+        background: #8A995F;
+        h3 {
+            padding-left: getRem(50);
+            font-size: getRem(58);
+            font-weight: 700;
+            padding-top: getRem(80);
+            margin: 0;
+            margin-bottom: getRem(20);
+            color: white
+        }
+        &-items {
+            display: flex;
+            padding: getRem(140) getRem(50);
+            justify-content: space-between;
+            &-item {
+                h4 { 
+                    margin: 0;
+                    color: #C6D8A4;
+                    font-size: getRem(96);
+                }
+                p {
+                    width: getRem(292);
+                    color: #C6D8A4;
+                    font-size: getRem(24);
+                    margin: 0;
+                }
+            }
+        }
+    }
+    &-team {
+        display: flex;
+        justify-content: space-between;
+        h3 {
+            margin-left: getRem(50);
+            margin-top: getRem(150);
+            margin-bottom: getRem(150);
+            width: getRem(432);
+            font-size: getRem(48);
+        }
+        &-info {
+            width: 50vw;
+            padding-left: getRem(50);
+            h3 {
+                padding-left: getRem(50);
+                font-size: getRem(58);
+                font-weight: 700;
+                margin-top: getRem(90);
+                margin-bottom: getRem(20);
+            }
+            p {
+                padding-left: getRem(50);
+                font-size: getRem(20);
+                width: getRem(530);
+            }
+        }
+    }
+}
