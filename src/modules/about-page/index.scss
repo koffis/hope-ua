@@ -1,6 +1,7 @@
 @import '../../index.scss';
 
 .about {
+    margin-left: getRem(100);
     &-main {
         display: flex;
         &-left {
@@ -103,6 +104,27 @@
                     text-align: center;
                     margin-top: getRem(40);
                 }
+            }
+        }
+    }
+    &-photos {
+        h3 {
+            padding-left: getRem(50);
+            font-size: getRem(58);
+            font-weight: 700;
+            margin-top: getRem(90);
+            margin-bottom: getRem(120);
+        }
+        &-list {
+            display: flex;
+            justify-content: space-evenly;
+            background: #F2CAAA;
+            img {
+                cursor: pointer;
+                padding: getRem(100) 0;
+                width: getRem(240);
+                height: getRem(240);
+                object-fit: cover;
             }
         }
     }

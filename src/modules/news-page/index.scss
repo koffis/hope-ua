@@ -1,11 +1,13 @@
 @import '../../index.scss';
 
 .allnews {
+    margin-left: getRem(100);
     h2 {
         padding-left: getRem(50);
         font-size: getRem(58);
         font-weight: 700;
-        margin-top: getRem(90);
+        padding-top: getRem(90);
+        margin-top: 0;
         margin-bottom: getRem(20);
     }
     &-items {
@@ -14,6 +16,9 @@
         h3 {
             padding-left: getRem(50);
             width: getRem(636);
+        }
+        p {
+            width: fit-content;
         }
     }
 }

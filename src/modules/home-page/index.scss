@@ -1,6 +1,7 @@
 @import '../../index.scss';
 
 .home {
+    margin-left: getRem(100);
     &-header {
         background-image: url('../../assets/images/pole.png');
         background-repeat: round;
@@ -152,7 +153,6 @@
             width: 50vw;
             padding-left: getRem(50);
             h3 {
-                padding-left: getRem(50);
                 font-size: getRem(58);
                 font-weight: 700;
                 margin-top: getRem(90);

@@ -1,0 +1,93 @@
+@import '../index.scss';
+
+.sidebar-closed {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #FDD66D;
+  width: getRem(100);
+  height: 100vh;
+  position: fixed;
+  &-logo {
+    width: getRem(50);
+    padding-top: getRem(36);
+  }
+  span {
+    padding-bottom: getRem(36);
+  }
+  &-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    img {
+      width: getRem(25);
+    }
+  }
+  &:hover {
+    background: #fda76d;
+  }
+}
+
+.sidebar {
+  display: flex;
+  &-opened {
+    z-index: 1000;
+    padding-left: getRem(50);
+    transition: 0.5s;
+    position: fixed;
+    margin-left: getRem(100);
+    width: 100%;
+    height: 100vh;
+    background: #FCF6BD;
+    &-menu {
+      padding-top: getRem(150);
+      display: flex;
+      flex-direction: column;
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: getRem(58);
+        &:hover {
+          color: #E07C3E;
+        }
+      }
+    }
+    button {
+      cursor: pointer;
+      position: absolute;
+      right: getRem(150);
+      top: 0;
+      font-size: getRem(14);
+      padding: getRem(30) getRem(150);
+      color: white;
+      border: 0;
+      background: #48588A;
+      text-transform: uppercase;
+      &:hover {
+          background: #6a79a7;
+      }
+    }
+    &-networks {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      right: getRem(400);
+      bottom: getRem(200);
+      a {
+          margin-top: getRem(20);
+          width: getRem(140);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          text-decoration: none;
+          color: black;
+          font-size: getRem(16);
+          text-transform: uppercase;
+      }
+    }
+  }
+}

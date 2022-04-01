@@ -115,3 +115,28 @@
         }
     }
 }
+
+.slider {
+    padding-top: getRem(190);
+    padding-bottom: getRem(100);
+    background: #C9D8E1;;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    &-item {
+        margin-bottom: getRem(90);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            object-fit: cover;
+            width: getRem(350);
+            height: getRem(350);
+            border-radius: 50%;
+        }
+        h4 {
+            font-size: getRem(24);
+            margin-bottom: getRem(0);
+        }
+    }
+}
