@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
+import News from "../../components/news";
 import Footer from '../../components/footer';
+
 import plus from '../../assets/images/plus.svg';
 import hat from '../../assets/images/hat.svg';
 import bag from '../../assets/images/bag.svg';
@@ -9,8 +12,16 @@ import flag from '../../assets/images/flagBig.png';
 import './index.scss'
 
 const AboutPage = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
+
     return (
         <div className="about">
+            <Helmet>
+                <title>Hope.ua - About</title>
+            </Helmet>
             <div className="about-main">
                 <div className="about-main-left">
                     <h3>Про нас</h3>
@@ -51,6 +62,7 @@ const AboutPage = () => {
                     <p>Lorem ipsum dolor sit amet consectetur adipiscing elit donec congue, erat montes velit tristique elementum turpis vehicula dis. Suscipit fusce sodales lacinia faucibus ex himenaeos eros donec tellus, interdum torquent rutrum diam primis nisl facilisis sit, vivamus etiam convallis adipiscing dignissim scelerisque vehicula litora.</p>
                 </div>
             </div>
+            <News />
             <Footer />
         </div>
     );

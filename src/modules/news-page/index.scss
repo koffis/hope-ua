@@ -1,0 +1,19 @@
+@import '../../index.scss';
+
+.allnews {
+    h2 {
+        padding-left: getRem(50);
+        font-size: getRem(58);
+        font-weight: 700;
+        margin-top: getRem(90);
+        margin-bottom: getRem(20);
+    }
+    &-items {
+        display: flex;
+        flex-wrap: wrap;
+        h3 {
+            padding-left: getRem(50);
+            width: getRem(636);
+        }
+    }
+}

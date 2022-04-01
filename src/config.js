@@ -1,6 +1,6 @@
 export const ROUTES = {
   root: "/",
   about: "/about",
-  game: "/game",
+  news: "/news",
   error: "/error",
 };

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../../components/footer';
 
@@ -9,6 +9,9 @@ import granny from '../../assets/images/granny.png'
 import './index.scss';
 
 const HomePage = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
     return (
         <div className='home'>
             <div className='home-header'>
